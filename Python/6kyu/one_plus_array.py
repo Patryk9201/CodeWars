@@ -11,3 +11,23 @@ For example the array [2, 3, 9] equals 239, adding one would return the array [2
 
 [4, 3, 2, 5] would return [4, 3, 2, 6]
 """
+
+import unittest
+
+
+def up_array(arr):
+    if not arr or min(arr) < 0 or max(arr) > 9:
+        return None
+    else:
+        return [int(y) for y in str(int("".join([str(x) for x in arr])) + 1)]
+
+
+
+
+
+
+if __name__ == '__main__':
+    x = up_array([2, 3, 9])
+    print(x)
+    unittest.main()
+

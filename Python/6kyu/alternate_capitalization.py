@@ -6,12 +6,11 @@ The input will be a lowercase string with no spaces.
 Good luck!"""
 
 
-def capitalize(s):
-
+def capitalizer(s):
     s = ''.join(c if i % 2 else c.upper() for i, c in enumerate(s))
     return [s, s.swapcase()]
 
 
 if __name__ == '__main__':
-    x = capitalize("abcdef")
+    x = capitalizer("patryk")
     print(x)
